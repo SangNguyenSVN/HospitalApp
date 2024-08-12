@@ -22,7 +22,7 @@ const Category = () => {
             const response = await Global_API.getCategories();
             // console.log(response.data.data);
             setCateLst(response.data.data);
-        } catch (error) {
+        } catch (error) {   
             console.trace(error);
             console.log("Error at Hospital-Booking-App/app/src/App/components/home/Category.tsx");
         }
